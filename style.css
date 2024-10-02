@@ -254,4 +254,53 @@ footer a:hover {
         margin: 0 10px;
     }
 }
+/* Styles pour la section des vidéos */
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.video {
+    margin: 20px;
+    width: 45%; /* Taille par défaut pour les grands écrans */
+}
+
+/* Ajustements pour les tablettes */
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+    .video {
+        width: 100%; /* Chaque vidéo occupe toute la largeur sur tablette */
+    }
+}
+
+/* Ajustements pour les petits écrans (téléphones) */
+@media only screen and (max-width: 600px) {
+    .video {
+        width: 100%; /* Les vidéos occupent toute la largeur sur mobile */
+        margin: 10px 0; /* Réduction des marges */
+    }
+}
+/* Ajustements pour les grands écrans */
+@media only screen and (min-width: 1200px) {
+    img {
+        width: 80%; /* Réduit la taille des images sur les grands écrans pour ne pas déborder */
+        margin: 0 auto; /* Centrage des images */
+    }
+}
+
+/* Ajustements pour les tablettes */
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+    img {
+        width: 90%; /* Les images prennent 90% de la largeur */
+        margin: 10px auto; /* Centrage des images avec une légère marge */
+    }
+}
+
+/* Ajustements pour les petits écrans (téléphones) */
+@media only screen and (max-width: 600px) {
+    img {
+        width: 100%; /* Les images occupent toute la largeur de l'écran */
+        margin: 0 auto 20px auto; /* Réduction des marges pour une meilleure utilisation de l'espace */
+    }
+}
 
