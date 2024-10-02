@@ -1,0 +1,180 @@
+/* Import des polices */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header .hero {
+    position: relative;
+    background-image: url('https://gourmandiz.dhnet.be/app/uploads/2018/09/platprepara.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+header p {
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #5fc401;
+}
+
+.content-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d35400;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.menu-section {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.menu-section h3 {
+    font-size: 1.8rem;
+    color: #0d0e0d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.menu-section ul {
+    list-style: none;
+}
+
+.menu-section ul li {
+    padding: 10px 0;
+}
+
+.btn-plat {
+    background-color: #0090d3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+.btn-plat:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-plat:active {
+    transform: scale(1.02);
+    box-shadow: none;
+}
+
+.videos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.video {
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #e67e22;
+}
+
